@@ -1,0 +1,66 @@
+/* paginas internas: Filhotes Disponiveis (hub + listas) */
+body{background:var(--cream)}
+.pghead{background:radial-gradient(120% 160% at 85% 120%,#8a5a2b 0,rgba(138,90,43,0) 55%),radial-gradient(100% 140% at 0% 0%,#4a3016 0,rgba(74,48,22,0) 60%),linear-gradient(135deg,#2a1d10,#1c1610);padding:46px 0 52px;position:relative;overflow:hidden;border-bottom:3px solid var(--gold)}
+.pghead::after{content:"";position:absolute;left:-5%;right:-5%;bottom:-38px;height:80px;border-top:2px solid rgba(211,173,132,.55);border-radius:50% 50% 0 0/100% 100% 0 0;transform:rotate(-1.2deg);pointer-events:none}
+.pghead .wrap{position:relative;text-align:center}
+.pghead h1{font-size:clamp(2rem,4.4vw,3.1rem);font-weight:500;color:#fff;margin:6px 0 8px}
+.pghead .sub{margin:0 auto;max-width:560px;color:#e9dcc6;font-size:.98rem}
+.crumb{margin:0;font-size:.8rem;color:var(--gold2);letter-spacing:.02em}
+.crumb a:hover{text-decoration:underline}.crumb span{margin:0 8px;opacity:.7}
+.pgbody{padding:44px 0 56px;color:var(--ink)}
+/* hub: 3 categorias */
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.cat{display:flex;flex-direction:column;background:#fbf7ee;border-radius:12px;padding:10px 10px 18px;box-shadow:0 6px 18px rgba(60,40,20,.16);text-align:center;transition:transform .25s,box-shadow .25s}
+.cat:hover{transform:translateY(-5px);box-shadow:0 12px 26px rgba(60,40,20,.24)}
+.cat .pic{display:block;aspect-ratio:1/1.02;border-radius:8px;overflow:hidden;background:#d9c9aa}
+.cat .pic img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.cat:hover .pic img{transform:scale(1.05)}
+.cat h2{font-size:1.65rem;color:#a07650;margin:16px 0 6px;font-weight:600}
+.cat .more{font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#7a5a3a}
+.cat .more i{font-style:normal;display:inline-block;transition:transform .2s}.cat:hover .more i{transform:translateX(4px)}
+/* lista de filhotes */
+.lista{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.lista.vazia{display:block}
+.pup{background:#fbf7ee;border-radius:12px;padding:10px 10px 16px;box-shadow:0 6px 18px rgba(60,40,20,.16);display:flex;flex-direction:column}
+.pup .pic{aspect-ratio:4/5;border-radius:8px;overflow:hidden;background:#d9c9aa}
+.pup .pic img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.pup .inf{padding:14px 6px 0;text-align:center;display:flex;flex-direction:column;gap:4px;flex:1}
+.pup h3{font-size:1.3rem;color:#a07650;font-weight:600}
+.pup p{margin:0;font-size:.9rem}.pup .meta{color:#6f5a44;font-size:.85rem}
+.pup .ask{margin-top:auto;align-self:center;padding:10px 24px;border-radius:999px;background:var(--gold);color:#1c1610;font-weight:700;font-size:.85rem;transition:background .2s,transform .2s}
+.pup .inf>p+.ask,.pup h3+.ask{margin-top:12px}
+.pup .ask:hover{background:var(--gold2);transform:translateY(-1px)}
+.empty{max-width:560px;margin:10px auto;text-align:center;background:#fbf7ee;border-radius:12px;padding:34px 24px;box-shadow:0 6px 18px rgba(60,40,20,.14)}
+.empty h2{font-size:1.4rem;color:#a07650;margin-bottom:8px}.empty p{margin:0 0 18px}
+.back{margin:34px 0 0;text-align:center}.back a{color:#7a5a3a;font-weight:700;border-bottom:1px solid var(--gold)}
+@media(max-width:900px){.cats,.lista{grid-template-columns:repeat(2,1fr)}.pghead{padding:34px 0 44px}}
+@media(max-width:560px){.cats,.lista{grid-template-columns:1fr;gap:20px}.pgbody{padding:30px 0 44px}.cat h2{font-size:1.45rem}}
+/* pagina Pais: pai de um lado, mae do outro */
+.pais{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px;max-width:860px;margin:0 auto;align-items:start}
+.pcol{display:flex;flex-direction:column;gap:22px;min-width:0}
+.ptit{font-size:1.15rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#7a5a3a;text-align:center;display:flex;align-items:center;gap:14px}
+.ptit::before,.ptit::after{content:"";flex:1;height:1px;background:var(--gold)}
+.pai{display:flex;flex-direction:column;background:#fbf7ee;border-radius:12px;padding:10px 10px 18px;box-shadow:0 6px 18px rgba(60,40,20,.16);text-align:center;transition:transform .25s,box-shadow .25s}
+.pai .fotos{all:unset;box-sizing:border-box;display:flex;flex-direction:column;cursor:pointer;border-radius:8px}
+.pai:hover{transform:translateY(-5px);box-shadow:0 12px 26px rgba(60,40,20,.24)}
+.pai .fotos:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.pai .pic{display:block;aspect-ratio:4/5;border-radius:8px;overflow:hidden;background:#d9c9aa}
+.pai .pic img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 30%;transition:transform .5s}
+.pai .fotos:hover .pic img{transform:scale(1.05)}
+.pai .inf{display:flex;flex-direction:column;gap:3px;padding:14px 6px 0}
+.pai .papel{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.pai .nome{font-family:'Playfair Display',Georgia,serif;font-size:1.9rem;font-weight:600;color:#a07650;line-height:1.1}
+.pai .meta{font-size:.85rem;color:#6f5a44}.pai .txt{font-size:.9rem;color:var(--ink);margin-top:4px}
+.pai .more{margin-top:10px;font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#7a5a3a}
+.pai .more i{font-style:normal;display:inline-block;transition:transform .2s}.pai .fotos:hover .more i{transform:translateX(4px)}
+.pvazio{text-align:center;margin:0;color:#6f5a44}
+@media(max-width:560px){.pais{grid-template-columns:1fr;gap:30px}}
+/* pop-up de fotos (usa o estilo .lb do style.css) */
+.lb .fig{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px;max-width:100%;max-height:100%;min-height:0;cursor:default}
+.lb .fig img{max-width:100%;max-height:calc(100vh - 150px);min-height:0}
+.lb figcaption{color:#f1e8d8;font-family:'Playfair Display',Georgia,serif;font-size:1.15rem;text-align:center;white-space:pre}
+.lb.uma .p,.lb.uma .n{display:none}
+.pai .reserva{align-self:center;margin-top:14px;padding:11px 26px;border-radius:999px;background:var(--gold);color:#1c1610;font-weight:700;font-size:.88rem;transition:background .2s,transform .2s}
+.pai .reserva:hover{background:var(--gold2);transform:translateY(-1px)}
+.pup .pic.cartaz{position:relative;background:#e9dcc6}.pup .pic.cartaz .bg{position:absolute;inset:-24px;background-size:cover;background-position:center;filter:blur(20px) saturate(1.1);opacity:.85}.pup .pic.cartaz img{position:relative;object-fit:contain;object-position:center}
+.lista:has(>.pup:only-child){grid-template-columns:minmax(0,360px);justify-content:center}

@@ -15,14 +15,11 @@ window.PAIS = {
       fotos: ["images/pais/pierre-1.jpg", "images/pais/pierre-2.jpg"] },
     { nome: "Leoncio", cor: "", info: "",
       fotos: ["images/pais/loencia-1.jpg", "images/pais/loencia-2.jpg","images/pais/loencia-3.jpg"] },
-    { nome: "Baby", cor: "", info: "", posicao: "62% 40%",
-      fotos: ["images/pais/baby-1.jpg", "images/pais/baby-2.jpg"] },
     { nome: "Yuri", cor: "", info: "", posicao: "center 25%", fotos: ["images/pais/yuri-1.jpg"] },
     { nome: "Bento", cor: "", info: "", posicao: "center 30%", fotos: ["images/pais/bento-1.jpg"] },
     { nome: "Pedro", cor: "", info: "", posicao: "center 25%", fotos: ["images/pais/pedro-1.jpg"] },
     { nome: "Theo", cor: "", info: "", posicao: "center 35%",
-      fotos: ["images/pais/theo-1.jpg", "images/pais/theo-2.jpg"] },
-    { nome: "Yuki", cor: "", info: "", posicao: "60% 25%", fotos: ["images/pais/yuki-1.jpg"] }
+      fotos: ["images/pais/theo-1.jpg", "images/pais/theo-2.jpg"] }
   ],
   maes: [
     { nome: "Catarina", cor: "Preto e Branco", info: "",
@@ -41,6 +38,9 @@ window.PAIS = {
     { nome: "Lady", cor: "", info: "", posicao: "45% 40%",
       fotos: ["images/pais/lady-1.jpg", "images/pais/lady-2.jpg"] },
     { nome: "Penélope", cor: "", info: "", posicao: "75% 35%", fotos: ["images/pais/penelope-1.jpg"] },
-    { nome: "Brenda", cor: "", info: "", posicao: "35% 35%", fotos: ["images/pais/brenda-1.jpg"] }
+    { nome: "Brenda", cor: "", info: "", posicao: "35% 35%", fotos: ["images/pais/brenda-1.jpg"] },
+    { nome: "Baby", cor: "", info: "", posicao: "62% 40%",
+      fotos: ["images/pais/baby-1.jpg", "images/pais/baby-2.jpg"] },
+    { nome: "Yuki", cor: "", info: "", posicao: "60% 25%", fotos: ["images/pais/yuki-1.jpg"] }
   ]
 };

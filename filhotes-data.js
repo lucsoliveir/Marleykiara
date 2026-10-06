@@ -16,7 +16,11 @@ window.FILHOTES = {
     { foto: "images/filhotes/lindo-blue.jpg", nome: "Lindo Blue", cartaz: true,
       mensagem: "Olá! Tenho interesse no filhote Lindo Blue (macho) que vi no site do Canil Marley Kiara." },
     { foto: "images/filhotes/machinho-chocolate.jpg", nome: "Machinho Chocolate", cartaz: true,
-      mensagem: "Olá! Tenho interesse no filhote macho Chocolate que vi no site do Canil Marley Kiara." }
+      mensagem: "Olá! Tenho interesse no filhote macho Chocolate que vi no site do Canil Marley Kiara." },
+    { foto: "images/filhotes/macho-chocolate-2.jpg", nome: "Macho Chocolate", cor: "Chocolate", cartaz: true,
+      mensagem: "Olá! Tenho interesse no filhote macho Chocolate (fotos com a língua de fora) que vi no site do Canil Marley Kiara." },
+    { foto: "images/filhotes/macho-2.jpg", nome: "Filhote macho", cartaz: true,
+      mensagem: "Olá! Tenho interesse no filhote macho (de roupinha vermelha) que vi no site do Canil Marley Kiara." }
   ],
   femeas: [
     { foto: "images/filhotes/linda-menina.jpg", nome: "Linda menina", cartaz: true,
@@ -24,7 +28,15 @@ window.FILHOTES = {
     { foto: "images/filhotes/linda-menina-reserva.jpg", nome: "Linda menina para reserva", cartaz: true,
       mensagem: "Olá! Tenho interesse em reservar a filhote fêmea Linda menina que vi no site do Canil Marley Kiara." },
     { foto: "images/filhotes/princesa.jpg", nome: "Princesa", cartaz: true,
-      mensagem: "Olá! Tenho interesse na filhote fêmea Princesa que vi no site do Canil Marley Kiara." }
+      mensagem: "Olá! Tenho interesse na filhote fêmea Princesa que vi no site do Canil Marley Kiara." },
+    { foto: "images/filhotes/femea-chocolate.jpg", nome: "Fêmea Chocolate", cor: "Chocolate", cartaz: true,
+      mensagem: "Olá! Tenho interesse na filhote fêmea Chocolate (com laço rosa) que vi no site do Canil Marley Kiara." },
+    { foto: "images/filhotes/femea-2.jpg", nome: "Fêmea Creme", cor: "Creme", cartaz: true,
+      mensagem: "Olá! Tenho interesse na filhote fêmea Creme (com coroinha azul) que vi no site do Canil Marley Kiara." },
+    { foto: "images/filhotes/femea-3.jpg", nome: "Fêmea Preta e Branca", cor: "Preta e branca", cartaz: true,
+      mensagem: "Olá! Tenho interesse na filhote fêmea Preta e Branca (com laço rosa) que vi no site do Canil Marley Kiara." },
+    { foto: "images/filhotes/femea-4.jpg", nome: "Fêmea Chocolate 2", cor: "Chocolate", cartaz: true,
+      mensagem: "Olá! Tenho interesse na filhote fêmea Chocolate (com colarzinho de miçangas) que vi no site do Canil Marley Kiara." }
   ],
   adultos: [
   ]
